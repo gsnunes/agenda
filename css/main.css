@@ -10,11 +10,11 @@ body {margin: 20px; font-size: 10px}
 .content {background-color: #e9e9e9; color: #656565; padding: 10px; border-radius: 10px}
 
 
-.header {margin-bottom: 10px; overflow: hidden}
-.header p {margin:0 0 0 20px; float: left; font-size: 16px}
+.header {overflow: hidden; margin: 5px 0 5px 10px}
+.header p {margin:0 0 0 15px; float: left; font-size: 16px; font-weight: bold;}
 
 .btn-group .btn {
-	border-radius: 50px; border:1px solid #a6a6a6; float: left; height: 16px; outline: none;
+	border-radius: 50px; border:1px solid #a6a6a6; float: left; height: 16px; outline: none; padding: 2px 5px;
 
 	background: -webkit-linear-gradient(#f4f4f4, #dedede);
 	background: -o-linear-gradient(#f4f4f4, #dedede);
@@ -44,12 +44,22 @@ ul.point-list li {list-style: none; border-top: 1px solid #c8c8c8; height: 50px;
 ul.point-list li:first-child {border-bottom:1px solid #c8c8c8; border-top: 0; height: 29px; margin:-7px 0 21px 0}
 
 ul.point-list li .point {
-	height:25px; display: inline-block; padding:1px;
+	height:25px; display: inline-block; padding:1px; position: relative;
 
 	background: -webkit-linear-gradient(#acc6d9, #8cb0cb);
 	background: -o-linear-gradient(#acc6d9, #8cb0cb);
 	background: -moz-linear-gradient(#acc6d9, #8cb0cb);
 	background: linear-gradient(#acc6d9, #8cb0cb);
+
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#acc6d9', endColorstr='#8cb0cb', GradientType=0)";
 }
 ul.point-list li:first-child .point {height: 18px; margin-top: 7px}
-ul.point-list li .point .inner-border {border:1px solid #bacfdf; height:100%}
+ul.point-list li .point .point-content {border:1px solid #bacfdf; height:100%}
+ul.point-list li .point .icon-bell {position: absolute; bottom: 4px; right: 5px}
+
+
+.sprite {background: url(../img/sprite.png) no-repeat; display: inline-block;}
+.sprite.icon-previous {background-position: -20px -20px; width: 6px; height: 9px;}
+.sprite.icon-lozenge {background-position: -46px -20px; width: 8px; height: 9px;}
+.sprite.icon-next {background-position: -74px -20px; width: 6px; height: 9px;}
+.sprite.icon-bell {background-position: -100px -20px; width: 10px; height: 10px;}
