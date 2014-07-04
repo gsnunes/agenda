@@ -1,0 +1,55 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {margin: 20px; font-size: 10px}
+
+
+.content {background-color: #e9e9e9; color: #656565; padding: 10px; border-radius: 10px}
+
+
+.header {margin-bottom: 10px; overflow: hidden}
+.header p {margin:0 0 0 20px; float: left; font-size: 16px}
+
+.btn-group .btn {
+	border-radius: 50px; border:1px solid #a6a6a6; float: left; height: 16px; outline: none;
+
+	background: -webkit-linear-gradient(#f4f4f4, #dedede);
+	background: -o-linear-gradient(#f4f4f4, #dedede);
+	background: -moz-linear-gradient(#f4f4f4, #dedede);
+	background: linear-gradient(#f4f4f4, #dedede);
+}
+
+.btn-group .btn:active {-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}
+.btn-group .btn+.btn {margin-left:-1px;}
+
+.btn-group .btn:first-child {border-top-right-radius:0; border-bottom-right-radius:0;}
+.btn-group .btn:last-child {border-top-left-radius:0; border-bottom-left-radius:0;}
+.btn-group .btn:not(:first-child):not(:last-child) {border-radius: 0}
+
+
+.agenda {overflow:hidden}
+
+ul.day-list {border:1px solid #e9e9e9; float:left; min-width:35px; margin: 0 5px 0 0; padding: 0; text-align: right}
+ul.day-list li {list-style: none; border-top: 1px solid #e9e9e9; height: 50px}
+ul.day-list li:first-child {margin-top:-7px}
+
+ul.day-list li span {position: relative; top: -7px}
+ul.day-list li:first-child span {top: 8px}
+
+ul.point-list {border:1px solid #c8c8c8; background-color: #f3f3f3; margin:0; padding: 0; width:auto; overflow:hidden}
+ul.point-list li {list-style: none; border-top: 1px solid #c8c8c8; height: 50px; background: url(../img/splitter.gif) repeat-x}
+ul.point-list li:first-child {border-bottom:1px solid #c8c8c8; border-top: 0; height: 29px; margin:-7px 0 21px 0}
+
+ul.point-list li .point {
+	height:25px; display: inline-block; padding:1px;
+
+	background: -webkit-linear-gradient(#acc6d9, #8cb0cb);
+	background: -o-linear-gradient(#acc6d9, #8cb0cb);
+	background: -moz-linear-gradient(#acc6d9, #8cb0cb);
+	background: linear-gradient(#acc6d9, #8cb0cb);
+}
+ul.point-list li:first-child .point {height: 18px; margin-top: 7px}
+ul.point-list li .point .inner-border {border:1px solid #bacfdf; height:100%}
