@@ -9,7 +9,7 @@ AGENDA = (function () {
 	return {
 
 		init: function () {
-			this.currentDate = this.getDate();
+			this.currentDate = this.getCurrentDate();
 
 			this.setHeaderTitle();
 			this.bindButtons();
@@ -20,12 +20,12 @@ AGENDA = (function () {
 			var self = this;
 
 			document.querySelector('.btn-previous').onclick = function () {
-				self.currentDate.setDate(self.currentDate.getDate() - 1);
+				self.currentDate.setDate(self.getCurrentDate().getDate() - 1);
 				self.setHeaderTitle();
 			};
 
 			document.querySelector('.btn-next').onclick = function () {
-				self.currentDate.setDate(self.currentDate.getDate() + 1);
+				self.currentDate.setDate(self.getCurrentDate().getDate() + 1);
 				self.setHeaderTitle();
 			};
 
@@ -97,7 +97,7 @@ AGENDA = (function () {
 		},
 
 
-		getDate: function () {
+		getCurrentDate: function () {
 			return new Date();
 		}
 
